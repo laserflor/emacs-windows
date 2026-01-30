@@ -1,3 +1,14 @@
+## Windows‑Hinweis: %HOME% setzen
+
+Damit Emacs unter Windows den SSH‑Konfigurationsordner findet (`%USERPROFILE%\.ssh`),
+muss die Umgebungsvariable `%HOME%` explizit gesetzt werden:
+
+Das passiert mit
+Erweiterte Systemeinstellungen ->
+Umgebungsvariablen ->
+Systemvariablen ->
+HOME → %USERPROFILE%
+
 ## TRAMP-Methode `/sshtt:` – OpenSSH unter Windows mit erzwungener TTY
 
 Windows-OpenSSH verhält sich in TRAMP-Sitzungen anders als unter Linux. 
