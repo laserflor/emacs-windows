@@ -24,7 +24,7 @@ identisch zu Linux-SSH.
 (add-to-list 'tramp-methods
                '("sshtt"
                  (tramp-login-program "ssh")
-                 (tramp-login-args (("-o") ("StrictHostKeyChecking=accept-new")("-tt") ("%h")))
+                 (tramp-login-args (("-o") ("StrictHostKeyChecking=accept-new") ("-tt") ("%h")))
                  (tramp-remote-shell "/bin/bash")
                  (tramp-remote-shell-args ("-c"))
                  (tramp-default-port 22)))
